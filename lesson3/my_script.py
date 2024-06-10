@@ -1,3 +1,3 @@
-ip_addr = "192.168.1.1"
+ip_addr = "10.10.10.10"
 for octet in ip_addr.split("."):
     print(octet)
