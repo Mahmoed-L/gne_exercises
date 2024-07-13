@@ -4,6 +4,6 @@ on :
   - push
 jobs :
   basic_job : 
-  runs-on : "ubuntu-22.04"
-  steps :
-    - run: python-3 --version
+    runs-on : "ubuntu-22.04"
+    steps :
+      - run: python-3 --version
