@@ -4,6 +4,6 @@ on:
   - push
 jobs:
   Excercising_echo_hello:
-    runs-on: "ubuntu-24-04"
+    runs-on: "ubuntu-24.04"
     steps:
       - run: echo hello
