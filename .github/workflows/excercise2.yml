@@ -1,0 +1,15 @@
+---
+name: Excercise 1a
+on:
+  - push
+jobs:
+  Excercising_python_version:
+    runs-on: "ubuntu-24.04"
+    steps:
+      -uses: actions/checkout@v4
+      -name: "setting up Python version 3.12 for githib exercise 2"
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+
+      -run: python3 --version
