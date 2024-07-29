@@ -1,9 +1,9 @@
 ---
 name: Excercise 1a
 on:
-  push
+  - push
 jobs:
-  Excercising echo hello:
+  Excercising_echo_hello:
     runs-on: "ubuntu-24-04"
     steps:
-      -run: echo hello
+      - run: echo hello
