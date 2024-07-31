@@ -14,10 +14,6 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - name: "Run python --version on Windows"
-        run: |
-          if: matrix.platform == 'windows-2022'
-          run: python --version
-          if: matrix.platform != 'windows-2022'
-          run: python3 --version     
+      - run: echo "hello"
+      - run: python --version
   
