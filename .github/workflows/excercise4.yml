@@ -16,8 +16,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: "Run python --version on Windows"
         run: |
-          if: runner.os == "windows"
+          if: runner.os == "Windows"
           run: python --version
-          if: runner.os != "windows"
+          if: runner.os != "Windows"
           run: python3 --version      
   
