@@ -24,7 +24,7 @@ jobs:
       
       - run: |
           echo "Workflow name: $GITHUB_WORKFLOW"
-          ECHO "Repository: $GITHUB_REPOSITORY"
+          echo "Repository: $GITHUB_REPOSITORY"
 
       - name: Install dependencies
         run: |
