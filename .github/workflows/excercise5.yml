@@ -19,13 +19,12 @@ jobs:
           python-version: "3.12"
 
       - run: |
-          echo "Running on ${{ runner.os}}" 
+          echo "Running on ${{ runner.os }}" 
           python3 --verison 
 
       - name: Install dependencies
         run: |
           python3 -m pip install --upgrade pip
-          python3 -m pip install -r ./requirements.txt
 
       - run: |
           echo "Environment: $ENVIRONMENT"
