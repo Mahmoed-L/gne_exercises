@@ -28,7 +28,7 @@ jobs:
           python3 -m pip install -r ./requirements.txt
 
       - run: |
-         echo "Environment: $ENVIRONMENT"
+          echo "Environment: $ENVIRONMENT"
 
       - name: "Testing variable in ${{ env.ENVIRONMENT }}" 
         run: |
