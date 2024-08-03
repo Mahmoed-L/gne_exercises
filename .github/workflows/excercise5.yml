@@ -1,0 +1,38 @@
+---
+name: Excercise 5a
+on:
+  - push
+env:
+  FORCE_COLOR: 1
+  ENVIRONMENT: gh_actions
+
+
+jobs:
+  job_5a:
+    runs-on: "ubuntu-24.04"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: "setting up Python version 3.12 for githib exercise a"
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: |
+          echo "Running on ${{ runner.os}}" 
+          python3 --verison 
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install -r ./requirements.txt
+
+      - run: |
+          echo "Environment: $ENVIRONMENT"
+
+      - name: "Testing variable in ${{ en.ENVIRONMENT }}" 
+        run: |
+          echo "Environment: ${{ env.ENVIRONMENT }}" 
+
+
+
