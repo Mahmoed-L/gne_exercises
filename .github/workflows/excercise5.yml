@@ -20,11 +20,12 @@ jobs:
 
       - run: |
           echo "Running on ${{ runner.os }}" 
-          python3 --verison 
+          python3 --version
 
       - name: Install dependencies
         run: |
           python3 -m pip install --upgrade pip
+          python3 -m pip install -r ./requirements.txt
 
       - run: |
           echo "Environment: $ENVIRONMENT"
