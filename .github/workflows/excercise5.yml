@@ -21,6 +21,10 @@ jobs:
       - run: |
           echo "Running on ${{ runner.os }}" 
           python3 --version
+      
+      - run: |
+          echo "Workflow name: $GITHUB_WORKFLOW"
+          ECHO "Repository: $GITHUB_REPOSITORY"
 
       - name: Install dependencies
         run: |
